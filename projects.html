@@ -86,7 +86,7 @@
 								</div>
 								<!--end:Menu item-->
 								<!--begin:Menu item-->
-								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+								<div data-kt-menu-trigger="click" class="menu-item here show menu-accordion">
 									<!--begin:Menu link-->
 									<a class="menu-link" href="projects.html">
 										<span class="menu-icon">
@@ -144,9 +144,9 @@
 								</div>
 								<!--end:Menu item-->
 								<!--begin:Menu item-->
-								<div class="menu-item menu-accordion here show">
+								<div class="menu-item menu-accordion">
 									<!--begin:Menu link-->
-									<a class="menu-link" href="#">
+									<a class="menu-link" href="contact.html">
 										<span class="menu-icon">
 											<i class="ki-duotone ki-messages">
 												<span class="path1"></span>
@@ -179,7 +179,7 @@
 							<!--begin::Page title-->
 							<div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-2 pb-5 pb-lg-0 pt-7 pt-lg-0" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
 								<!--begin::Heading-->
-								<h1 class="d-flex flex-column text-gray-900 fw-bold my-0 fs-1">Get In Touch ...</h1>
+								<h1 class="d-flex flex-column text-gray-900 fw-bold my-0 fs-1">Projects</h1>
 								<!--end::Heading-->
 							</div>
 							<!--end::Page title=-->
@@ -281,128 +281,69 @@
 						<!--end::Container-->
 					</div>
 					<!--end::Header-->
-					<!--begin::Content-->
-					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-						<!--begin::Container-->
-						<div class="container-fluid" id="kt_content_container">
-							<!--begin::Contact-->
-							<div class="card">
+					<!--begin::Col-->
+						<div class="container-fluid">
+							<!--begin::Card widget 18-->
+							<div class="card card-flush h-md-100">
 								<!--begin::Body-->
-								<div class="card-body p-lg-17">
+								<div class="card-body py-9">
 									<!--begin::Row-->
-									<div class="row mb-3">
+									<div class="row gx-9 h-100">
 										<!--begin::Col-->
-										<div class="col-md-12">
-											<!--begin::Form-->
-											<form action="https://formspree.io/f/mdoqnbvd" class="form mb-15" method="POST" id="kt_contact_form">
-												<h1 class="fw-bold text-gray-900 mb-9">Send Me Email</h1>
-													<div class="form-group mb-5">
-														<b>If you have any questions or comments, please feel free to email me. I will try to reply as soon as possible.<br><br></b>
+										<div class="col-sm-6 mb-10 mb-sm-0">
+											<!--begin::Image-->
+											<div class="bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-400px min-h-sm-200 h-100" style="background-size: 100% 100%;background-image:url('assets/media/avatars/Surena_5.jpg')"></div>
+											<!--end::Image-->
+										</div>
+										<!--end::Col-->
+										<!--begin::Col-->
+										<div class="col-sm-6">
+											<!--begin::Wrapper-->
+											<div class="d-flex flex-column h-100">
+												<!--begin::Header-->
+												<div>
+													<!--begin::Headin-->
+													<div class="d-flex flex-stack mb-6">
+														<!--begin::Title-->
+														<div class="flex-shrink-0 me-5">
+															<span class="text-gray-800 fs-1 fw-bold"><a href="#" class="mb-1 text-gray-900 text-hover-primary fw-bold">Surena-V Humanoid Robot</a></span>
+														</div>
+														<!--end::Title-->
 													</div>
-
-												<!--begin::Input group-->
-												<div class="row mb-5">
-													<!--begin::Col-->
-													<div class="col-md-6 fv-row">
-														<!--begin::Label-->
-														<label class="fs-5 fw-semibold mb-2">Name</label>
-														<!--end::Label-->
-														<!--begin::Input-->
-														<input type="text" class="form-control form-control-solid" placeholder="" name="name" />
-														<!--end::Input-->
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col-md-6 fv-row">
-														<!--end::Label-->
-														<label class="fs-5 fw-semibold mb-2">Email</label>
-														<!--end::Label-->
-														<!--end::Input-->
-														<input type="text" class="form-control form-control-solid" placeholder="" name="email" />
-														<!--end::Input-->
-													</div>
-													<!--end::Col-->
+													<!--end::Heading-->
 												</div>
-												<!--end::Input group-->
-												<!--begin::Input group-->
-												<div class="d-flex flex-column mb-5 fv-row">
-													<!--begin::Label-->
-													<label class="fs-5 fw-semibold mb-2">Subject</label>
-													<!--end::Label-->
-													<!--begin::Input-->
-													<input class="form-control form-control-solid" placeholder="" name="subject" />
-													<!--end::Input-->
+												<!--end::Header-->
+												<!--begin::Body-->
+												<div class="mb-6">
+													<!--begin::Text-->
+													<span class="fw-semibold text-gray-600 fs-6 mb-8 d-block"></span>
+													<!--end::Text-->
 												</div>
-												<!--end::Input group-->
-												<!--begin::Input group-->
-												<div class="d-flex flex-column mb-10 fv-row">
-													<label class="fs-6 fw-semibold mb-2">Message</label>
-													<textarea class="form-control form-control-solid" rows="6" name="message" placeholder=""></textarea>
+												<!--end::Body-->
+												<!--begin::Footer-->
+												<div class="d-flex flex-stack mt-auto bd-highlight">
+													<span class="badge badge-light-primary flex-shrink-0 align-self-center py-3 px-4 fs-7">In Process</span>
+													<!--begin::Actions-->
+													<a href="apps/projects/project.html" class="d-flex align-items-center text-primary opacity-75-hover fs-6 fw-semibold">View Project 
+													<i class="ki-duotone ki-exit-right-corner fs-4 ms-1">
+														<span class="path1"></span>
+														<span class="path2"></span>
+													</i></a>
+													<!--end::Actions-->
 												</div>
-												<!--end::Input group-->
-												<!--begin::Submit-->
-												<button type="submit" class="btn btn-primary" id="kt_contact_submit_button">
-													<!--begin::Indicator label-->
-													<span class="indicator-label">Send Feedback</span>
-													<!--end::Indicator label-->
-													<!--begin::Indicator progress-->
-													<span class="indicator-progress">Please wait... 
-													<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-													<!--end::Indicator progress-->
-												</button>
-												<!--end::Submit-->
-											</form>
-											<!--end::Form-->
+												<!--end::Footer-->
+											</div>
+											<!--end::Wrapper-->
 										</div>
 										<!--end::Col-->
 									</div>
 									<!--end::Row-->
-									<!--begin::Card-->
-									<div class="card mb-4 bg-light text-center">
-										<!--begin::Body-->
-										<div class="card-body py-12">
-											<!--begin::Icon-->
-											<a href="mailto:amirhsein.vedadi@gmail.com" target="_blank" class="mx-4">
-												<img src="assets/media/svg/social-logos/email.png" class="h-30px my-2" alt="" />
-											</a>
-											<!--end::Icon-->
-											<!--begin::Icon-->
-											<a href="https://github.com/amirhosein-vedadi" target="_blank" class="mx-4">
-												<img src="assets/media/svg/brand-logos/github.svg" class="h-30px my-2" alt="" />
-											</a>
-											<!--end::Icon-->
-											<!--begin::Icon-->
-											<a href="https://www.linkedin.com/in/amirhosein-vedadi" target="_blank" class="mx-4">
-												<img src="assets/media/svg/brand-logos/linkedin-2.svg" class="h-30px my-2" alt="" />
-											</a>
-											<!--end::Icon-->
-											<!--begin::Icon-->
-											<a href="https://twitter.com/AmroVed" target="_blank" class="mx-4">
-												<img src="assets/media/svg/social-logos/Twitter X.svg" class="h-30px my-2" alt="" />
-											</a>
-											<!--end::Icon-->
-											<!--begin::Icon-->
-											<a href="https://scholar.google.com/citations?user=H2Z3AZAAAAAJ" target="_blank" class="mx-4">
-												<img src="assets/media/svg/social-logos/Google_Scholar_logo.svg" class="h-30px my-2" alt="" />
-											</a>
-											<!--end::Icon-->
-											<!--begin::Icon-->
-											<a href="https://www.researchgate.net/profile/Amirhosein-Vedadi" target="_blank" class="mx-4">
-												<img src="assets/media/svg/social-logos/ResearchGate_icon_SVG.svg" class="h-30px my-2" alt="" />
-											</a>
-											<!--end::Icon-->
-										</div>
-										<!--end::Body-->
-									</div>
-									<!--end::Card-->
 								</div>
 								<!--end::Body-->
 							</div>
-							<!--end::Contact-->
+							<!--end::Card widget 18-->
 						</div>
-						<!--end::Container-->
-					</div>
-					<!--end::Content-->
+						<!--end::Col-->
 					<!--begin::Footer-->
 					<div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
 						<!--begin::Container-->
@@ -416,7 +357,7 @@
 							<!--begin::Menu-->
 							<ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
 								<li class="menu-item">
-									<a href="#" class="menu-link px-2">Contact</a>
+									<a href="contact.html" class="menu-link px-2">Contact</a>
 								</li>
 							</ul>
 							<!--end::Menu-->
