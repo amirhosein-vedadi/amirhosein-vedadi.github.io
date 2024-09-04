@@ -179,7 +179,7 @@
 							<!--begin::Page title-->
 							<div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-2 pb-5 pb-lg-0 pt-7 pt-lg-0" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
 								<!--begin::Heading-->
-								<h1 class="d-flex flex-column text-gray-900 fw-bold my-0 fs-1">سلام !</h1>
+								<h1 class="d-flex flex-column text-gray-900 fw-bold my-0 fs-1">ارتباط با من ...</h1>
 								<!--end::Heading-->
 							</div>
 							<!--end::Page title=-->
@@ -239,7 +239,7 @@
 														<span class="path10"></span>
 													</i>
 												</span>
-												<span class="menu-title">روشن</span>
+												<span class="menu-title">Light</span>
 											</a>
 										</div>
 										<!--end::Menu item-->
@@ -252,7 +252,7 @@
 														<span class="path2"></span>
 													</i>
 												</span>
-												<span class="menu-title">تیره</span>
+												<span class="menu-title">Dark</span>
 											</a>
 										</div>
 										<!--end::Menu item-->
@@ -267,7 +267,7 @@
 														<span class="path4"></span>
 													</i>
 												</span>
-												<span class="menu-title">سیستم</span>
+												<span class="menu-title">System</span>
 											</a>
 										</div>
 										<!--end::Menu item-->
@@ -350,67 +350,78 @@
 					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
 						<!--begin::Container-->
 						<div class="container-fluid" id="kt_content_container">
-							<!--begin::About card-->
+							<!--begin::Contact-->
 							<div class="card">
 								<!--begin::Body-->
 								<div class="card-body p-lg-17">
-									<!--begin::About-->
-									<div class="mb-18">
-										<!--begin::Wrapper-->
-										<div class="mb-10">
-											<!--begin::Top-->
-											<div class="text-center mb-15">
-												<!--begin::Title-->
-												<h3 class="fs-2hx text-gray-900 mb-5" lang="fa">درباره من</h3>
-												<!--end::Title-->
-											</div>
-											<!--end::Top-->
+									<!--begin::Row-->
+									<div class="row mb-3">
+										<!--begin::Col-->
+										<div class="col-md-12">
+											<!--begin::Form-->
+											<form action="https://formspree.io/f/mdoqnbvd" class="form mb-15" method="POST" id="kt_contact_form">
+												<h1 class="fw-bold text-gray-900 mb-9">ارسال ایمیل</h1>
+													<div class="form-group mb-5">
+														<b>هر نقطه نظری رو میتونید از طریق فرم زیر با من در میون بذارید. سعی میکنم در اولین فرصت پاسخ بدم.<br><br></b>
+													</div>
+
+												<!--begin::Input group-->
+												<div class="row mb-5">
+													<!--begin::Col-->
+													<div class="col-md-6 fv-row">
+														<!--begin::Label-->
+														<label class="fs-5 fw-semibold mb-2">نام</label>
+														<!--end::Label-->
+														<!--begin::Input-->
+														<input type="text" class="form-control form-control-solid" placeholder="" name="name" />
+														<!--end::Input-->
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col-md-6 fv-row">
+														<!--end::Label-->
+														<label class="fs-5 fw-semibold mb-2">ایمیل</label>
+														<!--end::Label-->
+														<!--end::Input-->
+														<input type="text" class="form-control form-control-solid" placeholder="" name="email" />
+														<!--end::Input-->
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Input group-->
+												<!--begin::Input group-->
+												<div class="d-flex flex-column mb-5 fv-row">
+													<!--begin::Label-->
+													<label class="fs-5 fw-semibold mb-2">موضوع</label>
+													<!--end::Label-->
+													<!--begin::Input-->
+													<input class="form-control form-control-solid" placeholder="" name="subject" />
+													<!--end::Input-->
+												</div>
+												<!--end::Input group-->
+												<!--begin::Input group-->
+												<div class="d-flex flex-column mb-10 fv-row">
+													<label class="fs-6 fw-semibold mb-2">پیام</label>
+													<textarea class="form-control form-control-solid" rows="6" name="message" placeholder=""></textarea>
+												</div>
+												<!--end::Input group-->
+												<!--begin::Submit-->
+												<button type="submit" class="btn btn-primary" id="kt_contact_submit_button">
+													<!--begin::Indicator label-->
+													<span class="indicator-label">ارسال</span>
+													<!--end::Indicator label-->
+													<!--begin::Indicator progress-->
+													<span class="indicator-progress">Please wait... 
+													<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+													<!--end::Indicator progress-->
+												</button>
+												<!--end::Submit-->
+											</form>
+											<!--end::Form-->
 										</div>
-										<!--end::Wrapper-->
-										<!--begin::Description-->
-										<div class="fs-5 fw-semibold text-gray-600">
-											<!--begin::Text-->
-											<p class="mb-8">من امیرحسین هستم و خوشحالم که اینجا هستید. من فارغ التحصیل رباتیک و کنترل هستم و به طور تخصصی روی ربات‌های پادارکار میکنم و اینکه چطور میتونیم حرکت مناسبی براشون ایجاد کنیم. 
-												پیش از این با مباحث درک محیط، تخمین حالت و ترکیب حسگرهای مختلف هم کار کردم که بهم اجازه میده درک مناسبی از این که ربات‌ها چطور باید محیط اطرافشون رو درک کنند، داشته باشم.
-												یکی از علایق اصلیم استفاده از یادگیری ماشین و پردازش تصویر هست که باهاش بتونیم هوشمندی ربات‌ها رو افزایش بدیم.</p>
-											<!--end::Text-->
-											<h5 class=" text-gray-900 mb-5">سرگذشت ...</h5>
-											<!--begin::Text-->
-											<p class="mb-8">لیسانس و فوق لیسانس مهندسی مکانیک رو در سال‌های ۱۳۹۸ و ۱۴۰۱ از دانشگاه تهران گرفتم.
-												موضوع پایان‌نامه‌ام در ارشد متمرکز بر روی بهبود درک محیطی یک ربات انسان‌نما بود تا بتونیم کمی هوشمندترش کنیم.
-												به طور خاص تخمین مکان بدست اومده از حسگرهای انکودر و IMU ربات رو به عنوان ورودی به الگوریتم‌های مکان‌یابی و نکاشت محیط همزمان میدادیم.</p>
-											<!--end::Text-->
-											<!--begin::Text-->
-											<p class="mb-8">مسیر کاری که اومدم رو به عنوان یه دستیار تحقیقاتی رباتیک در مرکز سیستم‌ها و فناوری‌های پیشرفته (<a href="https://cast-tech.ir/" class="link-primary pe-1">CAST</a>) شروع کردم.
-												تو اون مدت بیشتر روی ربات‌های پادار کار کردم و ۳ سالی هم در تیم دینامیک کنترل ربات سورنا ۵ مشغول بودم (<a href="https://surenahumanoid.com/" class="link-primary pe-1">Surena-V</a>).</p>
-											<p class="mb-8">از سال ۱۴۰۱ هم به عنوان مهندس رباتیک و هوش مصنوعی در مجموعه چیتا (<a href="https://dr-parsa.com/" class="link-primary pe-1">Cheetah</a>) مشغول به فعالیت شدم و پروژه‌های مختلفی رو در حوزه‌های یادگیری ماشین و پردازش تصویر انجام دادم.</p>
-											<!--end::Text-->
-										</div>
-										<!--end::Description-->
+										<!--end::Col-->
 									</div>
-									<!--end::About-->
-									<!--begin::Qoute-->
-									<div class="card bg-light mb-18">
-										<!--begin::Body-->
-										<div class="card-body py-15">
-											<!--begin::Testimonial-->
-											<div class="fs-2 fw-semibold text-muted text-center mb-3">
-												<span class="fs-4 fw-bold text-gray-600">گرچه رخنه نیست عالم را پدید</span>
-											</div>
-											<div class="fs-2 fw-semibold text-muted text-center mb-3">
-												<span class="fs-4 fw-bold text-gray-600">خیره یوسف‌وار میباید دوید</span>
-											</div>
-											
-											<!--end::Testimonial-->
-											<!--begin::Author-->
-											<div class="fs-2 fw-semibold text-muted text-center">
-												<span class="fs-4 fw-bold text-gray-600">مثنوی معنوی</span>
-											</div>
-											<!--end::Author-->
-										</div>
-										<!--end::Body-->
-									</div>
-									<!--end::Qoute-->
+									<!--end::Row-->
 									<!--begin::Card-->
 									<div class="card mb-4 bg-light text-center">
 										<!--begin::Body-->
@@ -452,7 +463,7 @@
 								</div>
 								<!--end::Body-->
 							</div>
-							<!--end::About card-->
+							<!--end::Contact-->
 						</div>
 						<!--end::Container-->
 					</div>
