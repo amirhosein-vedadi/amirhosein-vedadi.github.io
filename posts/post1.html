@@ -40,19 +40,42 @@
 			<!--begin::Page-->
 			<div class="page d-flex flex-row flex-column-fluid">
 				<!--begin::Aside-->
-				<div id="kt_aside" class="aside pt-5 pb-4 pb-lg-7 pt-lg-10" data-kt-drawer="true" data-kt-drawer-name="aside" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'150px', '300px': '150px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_toggle">
+				<div id="kt_aside" class="aside pt-7 pb-4 pb-lg-7 pt-lg-17" data-kt-drawer="true" data-kt-drawer-name="aside" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_toggle">
+					<!--begin::Aside user-->
+					<div class="aside-user mb-5 mb-lg-10" id="kt_aside_user">
+						<!--begin::User-->
+						<div class="d-flex align-items-center flex-column">
+							<!--begin::Symbol-->
+							<div class="symbol symbol-75px mb-4">
+								<img src="../assets/media/avatars/300-31.jpg" alt="" />
+							</div>
+							<!--end::Symbol-->
+							<!--begin::Info-->
+							<div class="text-center">
+								<!--begin::Username-->
+								<p class="text-gray-800 fs-4 fw-bolder">Amirhosein Vedadi</p>
+								<!--end::Username-->
+								<!--begin::Description-->
+								<span class="text-gray-600 fw-semibold d-block fs-7 mb-1">Robotics & AI Researcher</span>
+								<!--end::Description-->
+							</div>
+							<!--end::Info-->
+						</div>
+						<!--end::User-->
+					</div>
+					<!--end::Aside user-->
 					<!--begin::Aside menu-->
-					<div class="aside-menu flex-column-fluid ps-3 ps-lg-4 pe-1 mb-5" id="kt_aside_menu">
+					<div class="aside-menu flex-column-fluid ps-3 ps-lg-5 pe-1 mb-9" id="kt_aside_menu">
 						<!--begin::Aside Menu-->
-						<div class="w-100 hover-scroll-y pe-2 me-2" id="kt_aside_menu_wrapper" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_aside, #kt_aside_menu, #kt_aside_menu_wrapper" data-kt-scroll-offset="0">
+						<div class="w-100 hover-scroll-y pe-2 me-2" id="kt_aside_menu_wrapper" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_aside_logo, #kt_aside_user, #kt_aside_footer" data-kt-scroll-wrappers="#kt_aside, #kt_aside_menu, #kt_aside_menu_wrapper" data-kt-scroll-offset="0">
 							<!--begin::Menu-->
 							<div class="menu menu-column menu-rounded menu-sub-indention fw-semibold" id="#kt_aside_menu" data-kt-menu="true">
 								<!--begin:Menu item-->
-								<div class="menu-item pt-2">
+								<div data-kt-menu-trigger="click" class="menu-item here show menu-accordion">
 									<!--begin:Menu link-->
 									<a class="menu-link" href="../index.html">
 										<span class="menu-icon">
-											<i class="ki-duotone ki-home fs-2">
+											<i class="ki-duotone ki-home">
 												<span class="path1"></span>
 												<span class="path2"></span>
 											</i>
@@ -63,7 +86,7 @@
 								</div>
 								<!--end:Menu item-->
 								<!--begin:Menu item-->
-								<div data-kt-menu-trigger="click" class="menu-item here show menu-accordion">
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
 									<!--begin:Menu link-->
 									<a class="menu-link" href="../projects.html">
 										<span class="menu-icon">
@@ -88,7 +111,7 @@
 								<!--begin:Menu item-->
 								<div class="menu-item menu-accordion">
 									<!--begin:Menu link-->
-									<a class="menu-link" href="../blog_home.html">
+									<a class="menu-link" href="blog_home.html">
 										<span class="menu-icon">
 											<i class="ki-duotone ki-book-open">
 												<span class="path1"></span>
@@ -140,7 +163,7 @@
 							<!--begin::Page title-->
 							<div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-2 pb-5 pb-lg-0 pt-7 pt-lg-0" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
 								<!--begin::Heading-->
-								<h1 class="d-flex flex-column text-gray-900 fw-bold my-0 fs-1">Projects</h1>
+								<h1 class="d-flex flex-column text-gray-900 fw-bold my-0 fs-1">Blog Post</h1>
 								<!--end::Heading-->
 							</div>
 							<!--end::Page title=-->
@@ -308,122 +331,226 @@
 					</div>
 					<!--end::Header-->
 					<!--begin::Content-->
-                        <div id="kt_app_content" class="app-content flex-column-fluid">
-                            <!--begin::Content container-->
-                            <div id="kt_app_content_container" class="app-container container-xxl">
-                                <!--begin::About card-->
-                                <div class="card">
-                                    <!--begin::Body-->
-                                    <div class="card-body p-lg-17">
-                                        <!--begin::About-->
-                                        <div class="mb-18">
-                                            <!--begin::Wrapper-->
-                                            <div class="mb-10">
-                                                <!--begin::Top-->
-                                                <div class="text-center mb-15">
-                                                    <!--begin::Title-->
-                                                    <h3 class="fs-2hx mb-5">Pre-Collision Warning System</h3>
-                                                    <!--end::Title-->
-                                                </div>
-                                                <!--end::Top-->
-                                            </div>
-                                            <!--end::Wrapper-->
-                                            <!--begin::Description-->
-                                            <div class="fs-5 fw-semibold text-gray-600">
-                                                <!--begin::Text-->
-                                                <p class="mb-8">We worked on the <strong>Pre-Collision Warning System (FCW) Design and Development</strong> project at <strong>Cheetah</strong> in Tehran, Iran, from October 2022 to August 2023. This project aimed to enhance vehicle safety by providing real-time collision warnings to drivers.</p>
-                                                <!--end::Text-->
-                                                <!--begin::Text-->
-                                                <p class="mb-8"><strong>Key Contributions:</strong></p>
-                                                <!--end::Text-->
-                                                <!--begin::Text-->
-                                                <ul class="mb-8">
-                                                    <li>We implemented and optimized <strong>real-time object detection and tracking algorithms</strong> using neural networks to accurately identify potential collision threats.</li>
-                                                    <li>We developed a <strong>distance estimation and pre-collision warning algorithm</strong> using a single camera, enabling the system to provide timely alerts to drivers.</li>
-                                                    <li>We simulated and tested the algorithms in the <strong>CARLA simulation environment</strong>, ensuring their effectiveness and reliability before deployment.</li>
-                                                </ul>
-                                                <!--end::Text-->
-                                                <!--begin::Text-->
-                                                <p class="mb-17">You can find out more about this project at the following link: <a href="https://dr-parsa.com/fcw/" class="link-primary pe-1">Pre-Collision Warning System (FCW) Design and Development</a>.</p>
-                                                <!--end::Text-->
-                                            </div>
-                                            <!--end::Description-->
-                                        </div>
-                                        <!--end::About-->
-                                        <!--begin::Projects Section-->
-										<div class="mb-lg-n15 position-relative z-index-2">
-											<!--begin::Tabs content-->
-											<div class="tab-content">
-												<!--begin::Tab pane-->
-												<div class="tab-pane fade show active" id="kt_landing_projects_latest">
-													<!--begin::Row-->
-													<div class="row g-10">
-														<!--begin::Col-->
-														<div class="col-lg-6">
+						<div id="kt_app_content" class="app-content flex-column-fluid">
+							<!--begin::Content container-->
+							<div id="kt_app_content_container" class="app-container container-xxl">
+								<!--begin::Post card-->
+								<div class="card">
+									<!--begin::Body-->
+									<div class="card-body p-lg-20 pb-lg-0">
+										<!--begin::Layout-->
+										<div class="d-flex flex-column flex-xl-row">
+											<!--begin::Content-->
+											<div class="flex-lg-row-fluid me-xl-15">
+												<!--begin::Post content-->
+												<div class="mb-17">
+													<!--begin::Wrapper-->
+													<div class="mb-8">
+														<!--begin::Info-->
+														<div class="d-flex flex-wrap mb-6">
 															<!--begin::Item-->
-															<a class="d-block card-rounded overlay h-lg-100" data-fslightbox="lightbox-projects" href="media/adas.png">
-																<!--begin::Image-->
-																<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('media/adas.png')"></div>
-																<!--end::Image-->
-																<!--begin::Action-->
-																<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-																	<i class="bi bi-eye-fill fs-3x text-white"></i>
-																</div>
-																<!--end::Action-->
-															</a>
-															<!--end::Item-->
-														</div>
-														<!--end::Col-->
-														<!--begin::Col-->
-														<div class="col-lg-6">
-															<!--begin::Row-->
-															<div class="row g-10 mb-10">
-                                                                <!--begin::Item-->
-                                                                <a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="media/carla_test.gif">
-                                                                    <!--begin::Image-->
-                                                                    <div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('media/carla_test.gif')"></div>
-                                                                    <!--end::Image-->
-                                                                    <!--begin::Action-->
-                                                                    <div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-                                                                        <i class="bi bi-eye-fill fs-3x text-white"></i>
-                                                                    </div>
-                                                                    <!--end::Action-->
-                                                                </a>
-                                                                <!--end::Item-->
+															<div class="me-9 my-1">
+																<!--begin::Icon-->
+																<!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
+																<span class="svg-icon svg-icon-primary svg-icon-2 me-1">
+																	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect x="2" y="2" width="9" height="9" rx="2" fill="currentColor" />
+																		<rect opacity="0.3" x="13" y="2" width="9" height="9" rx="2" fill="currentColor" />
+																		<rect opacity="0.3" x="13" y="13" width="9" height="9" rx="2" fill="currentColor" />
+																		<rect opacity="0.3" x="2" y="13" width="9" height="9" rx="2" fill="currentColor" />
+																	</svg>
+																</span>
+																<!--end::Svg Icon-->
+																<!--end::Icon-->
+																<!--begin::Label-->
+																<span class="fw-bold text-gray-400">06 April 2021</span>
+																<!--end::Label-->
 															</div>
-															<!--end::Row-->
+															<!--end::Item-->
 															<!--begin::Item-->
-															<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="media/fcw.mp4">
-																<!--begin::Image-->
-																<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('media/fcw.png')"></div>
-																<!--end::Image-->
-																<!--begin::Action-->
-																<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-																	<i class="bi bi-eye-fill fs-3x text-white"></i>
-																</div>
-																<!--end::Action-->
-															</a>
+															<div class="me-9 my-1">
+																<!--begin::Icon-->
+																<!--SVG file not found: icons/duotune/finance/fin006.svgFolder.svg-->
+																<!--end::Icon-->
+																<!--begin::Label-->
+																<span class="fw-bold text-gray-400">Announcements</span>
+																<!--begin::Label-->
+															</div>
+															<!--end::Item-->
+															<!--begin::Item-->
+															<div class="my-1">
+																<!--begin::Icon-->
+																<!--begin::Svg Icon | path: icons/duotune/communication/com003.svg-->
+																<span class="svg-icon svg-icon-primary svg-icon-2 me-1">
+																	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path opacity="0.3" d="M2 4V16C2 16.6 2.4 17 3 17H13L16.6 20.6C17.1 21.1 18 20.8 18 20V17H21C21.6 17 22 16.6 22 16V4C22 3.4 21.6 3 21 3H3C2.4 3 2 3.4 2 4Z" fill="currentColor" />
+																		<path d="M18 9H6C5.4 9 5 8.6 5 8C5 7.4 5.4 7 6 7H18C18.6 7 19 7.4 19 8C19 8.6 18.6 9 18 9ZM16 12C16 11.4 15.6 11 15 11H6C5.4 11 5 11.4 5 12C5 12.6 5.4 13 6 13H15C15.6 13 16 12.6 16 12Z" fill="currentColor" />
+																	</svg>
+																</span>
+																<!--end::Svg Icon-->
+																<!--end::Icon-->
+																<!--begin::Label-->
+																<span class="fw-bold text-gray-400">24 Comments</span>
+																<!--end::Label-->
+															</div>
 															<!--end::Item-->
 														</div>
-														<!--end::Col-->
+														<!--end::Info-->
+														<!--begin::Title-->
+														<a href="#" class="text-dark text-hover-primary fs-2 fw-bold">Admin Panel - How To Get Started Tutorial. Create a customizable SaaS Based applications and solutions
+														<span class="fw-bold text-muted fs-5 ps-1">5 mins read</span></a>
+														<!--end::Title-->
+														<!--begin::Container-->
+														<div class="overlay mt-8">
+															<!--begin::Image-->
+															<div class="bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-350px" style="background-image:url('../assets/media/stock/1600x800/img-1.jpg')"></div>
+															<!--end::Image-->
+															<!--begin::Links-->
+															<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
+																<a href="../../demo1/dist/pages/about.html" class="btn btn-primary">About Us</a>
+																<a href="../../demo1/dist/pages/careers/apply.html" class="btn btn-light-primary ms-3">Join Us</a>
+															</div>
+															<!--end::Links-->
+														</div>
+														<!--end::Container-->
 													</div>
-													<!--end::Row-->
+													<!--end::Wrapper-->
+													<!--begin::Description-->
+													<div class="fs-5 fw-semibold text-gray-600">
+														<!--begin::Text-->
+														<p class="mb-8">First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words per minute and your writing skills are sharp. From the seed of the idea to finally hitting “Publish,” you might spend several days or maybe even a week “writing” a blog post, but it’s important to spend those vital hours planning your post and even thinking about
+														<a href="../../demo1/dist/pages/blog/post.html" class="link-primary pe-1">Your Post</a>(yes, thinking counts as working if you’re a blogger) before you actually write it.</p>
+														<!--end::Text-->
+														<!--begin::Text-->
+														<p class="mb-8">There’s an old maxim that states,
+														<span class="text-gray-800 pe-1">“No fun for the writer, no fun for the reader.”</span>No matter what industry you’re working in, as a blogger, you should live and die by this statement.</p>
+														<!--end::Text-->
+														<!--begin::Text-->
+														<p class="mb-8">Before you do any of the following steps, be sure to pick a topic that actually interests you. Nothing – and
+														<a href="../../demo1/dist/pages/blog/home.html" class="link-primary pe-1">I mean NOTHING</a>– will kill a blog post more effectively than a lack of enthusiasm from the writer. You can tell when a writer is bored by their subject, and it’s so cringe-worthy it’s a little embarrassing.</p>
+														<!--end::Text-->
+														<!--begin::Text-->
+														<p class="mb-17">I can hear your objections already. “But Dan, I have to blog for a cardboard box manufacturing company.” I feel your pain, I really do. During the course of my career, I’ve written content for dozens of clients in some less-than-thrilling industries (such as financial regulatory compliance and corporate housing), but the hallmark of a professional blogger is the ability to write well about any topic, no matter how dry it may be. Blogging is a lot easier, however, if you can muster at least a little enthusiasm for the topic at hand.</p>
+														<!--end::Text-->
+													</div>
+													<!--end::Description-->
+													<!--begin::Icons-->
+													<div class="d-flex flex-center">
+														<!--begin::Icon-->
+														<a href="mailto:amirhsein.vedadi@gmail.com" class="mx-4">
+															<img src="../assets/media/svg/social-logos/email.png" class="h-20px my-2" alt="" />
+														</a>
+														<!--end::Icon-->
+														<!--begin::Icon-->
+														<a href="https://github.com/amirhosein-vedadi" class="mx-4">
+															<img src="../assets/media/svg/brand-logos/github.svg" class="h-20px my-2" alt="" />
+														</a>
+														<!--end::Icon-->
+														<!--begin::Icon-->
+														<a href="https://www.linkedin.com/in/amirhosein-vedadi" class="mx-4">
+															<img src="../assets/media/svg/brand-logos/linkedin-2.svg" class="h-20px my-2" alt="" />
+														</a>
+														<!--end::Icon-->
+														<!--begin::Icon-->
+														<a href="https://twitter.com/AHosein_Vedadi" class="mx-4">
+															<img src="../assets/media/svg/social-logos/Twitter X.svg" class="h-20px my-2" alt="" />
+														</a>
+														<!--end::Icon-->
+														<!--begin::Icon-->
+														<a href="https://scholar.google.com/citations?user=H2Z3AZAAAAAJ" class="mx-4">
+															<img src="../assets/media/svg/social-logos/Google_Scholar_logo.svg" class="h-20px my-2" alt="" />
+														</a>
+														<!--end::Icon-->
+														<!--begin::Icon-->
+														<a href="https://www.researchgate.net/profile/Amirhosein-Vedadi" class="mx-4">
+															<img src="../assets/media/svg/social-logos/ResearchGate_icon_SVG.svg" class="h-20px my-2" alt="" />
+														</a>
+														<!--end::Icon-->
+													</div>
+													<!--end::Icons-->
 												</div>
-												<!--end::Tab pane-->
+												<!--end::Post content-->
 											</div>
-											<!--end::Tabs content-->
+											<!--end::Content-->
+											<!--begin::Sidebar-->
+											<div class="flex-column flex-lg-row-auto w-100 w-xl-300px mb-10">
+												<!--begin::Recent posts-->
+												<div class="m-0">
+													<h4 class="text-dark mb-7">Recent Posts</h4>
+													<!--begin::Item-->
+													<div class="d-flex flex-stack mb-7">
+														<!--begin::Symbol-->
+														<div class="symbol symbol-60px symbol-2by3 me-4">
+															<div class="symbol-label" style="background-image: url('../assets/media/stock/600x400/img-1.jpg')"></div>
+														</div>
+														<!--end::Symbol-->
+														<!--begin::Title-->
+														<div class="m-0">
+															<a href="#" class="text-dark fw-bold text-hover-primary fs-6">About Bootstrap Admin</a>
+															<span class="text-gray-600 fw-semibold d-block pt-1 fs-7">We’ve been a focused on making a the sky</span>
+														</div>
+														<!--end::Title-->
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex flex-stack mb-7">
+														<!--begin::Symbol-->
+														<div class="symbol symbol-60px symbol-2by3 me-4">
+															<div class="symbol-label" style="background-image: url('../assets/media/stock/600x400/img-2.jpg')"></div>
+														</div>
+														<!--end::Symbol-->
+														<!--begin::Title-->
+														<div class="m-0">
+															<a href="#" class="text-dark fw-bold text-hover-primary fs-6">A yellow sofa</a>
+															<span class="text-gray-600 fw-semibold d-block pt-1 fs-7">We’ve been a focused on making a the sky</span>
+														</div>
+														<!--end::Title-->
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex flex-stack mb-7">
+														<!--begin::Symbol-->
+														<div class="symbol symbol-60px symbol-2by3 me-4">
+															<div class="symbol-label" style="background-image: url('../assets/media/stock/600x400/img-3.jpg')"></div>
+														</div>
+														<!--end::Symbol-->
+														<!--begin::Title-->
+														<div class="m-0">
+															<a href="#" class="text-dark fw-bold text-hover-primary fs-6">Our Camra Mega Set</a>
+															<span class="text-gray-600 fw-semibold d-block pt-1 fs-7">We’ve been a focused on making a the sky</span>
+														</div>
+														<!--end::Title-->
+													</div>
+													<!--end::Item-->
+													<!--begin::Item-->
+													<div class="d-flex flex-stack">
+														<!--begin::Symbol-->
+														<div class="symbol symbol-60px symbol-2by3 me-4">
+															<div class="symbol-label" style="background-image: url('../assets/media/stock/600x400/img-4.jpg')"></div>
+														</div>
+														<!--end::Symbol-->
+														<!--begin::Title-->
+														<div class="m-0">
+															<a href="#" class="text-dark fw-bold text-hover-primary fs-6">Time to cook and eat?</a>
+															<span class="text-gray-600 fw-semibold d-block pt-1 fs-7">We’ve been a focused on making a the sky</span>
+														</div>
+														<!--end::Title-->
+													</div>
+													<!--end::Item-->
+												</div>
+												<!--end::Recent posts-->
+											</div>
+											<!--end::Sidebar-->
 										</div>
-										<!--end::Projects Section-->
-                                    </div>
-                                    <!--end::Body-->
-                                </div>
-                                <!--end::About card-->
-                                
-                            </div>
-                            <!--end::Content container-->
-                        </div>
-                        <!--end::Content-->
-                    <!--end::Content wrapper-->
+										<!--end::Layout-->
+									</div>
+									<!--end::Body-->
+								</div>
+								<!--end::Post card-->
+							</div>
+							<!--end::Content container-->
+						</div>
+						<!--end::Content-->
 					<!--begin::Footer-->
 					<div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
 						<!--begin::Container-->
