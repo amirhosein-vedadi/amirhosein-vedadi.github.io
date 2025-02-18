@@ -1,19 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<!--begin::Head-->
 	<head>
-		<title>Amirhosein Vedadi</title>
+		<title>Setting Up Isaac Gym and Legged Gym for Robot Training</title>
 		<meta charset="utf-8" />
-		<meta name="description" content="Amirhosein Vedadi Personal Website" />
-		<meta name="keywords" content="robotics, surena robot, legged robot, state estimation, slam, perception" />
+		<meta name="description" content="A comprehensive guide to installing and configuring Isaac Gym and Legged Gym for robotics research" />
+		<meta name="keywords" content="isaac gym, legged gym, robotics, simulation, reinforcement learning, installation, setup" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Amirhosein Vedadi Personal Website" />
-		<meta property="og:url" content="https://amirhosein-vedadi.github.io/" />
+		<meta property="og:title" content="Deep Reinforcement Learning for Legged Robots" />
+		<meta property="og:url" content="https://amirhosein-vedadi.github.io/posts/rl_legged_robots.html" />
 		<meta property="og:site_name" content="Amirhosein Vedadi Personal Website" />
-		<link rel="canonical" href="https://amirhosein-vedadi.github.io/" />
+		<link rel="canonical" href="https://amirhosein-vedadi.github.io/posts/rl_legged_robots.html" />
 		<link rel="shortcut icon" href="../assets/media/logos/favicon.ico" />
 		<!--begin::Fonts(mandatory for all pages)-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
@@ -71,7 +70,7 @@
 							<!--begin::Menu-->
 							<div class="menu menu-column menu-rounded menu-sub-indention fw-semibold" id="#kt_aside_menu" data-kt-menu="true">
 								<!--begin:Menu item-->
-								<div data-kt-menu-trigger="click" class="menu-item here show menu-accordion">
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
 									<!--begin:Menu link-->
 									<a class="menu-link" href="../index.html">
 										<span class="menu-icon">
@@ -109,15 +108,15 @@
 								<!--end:Menu item-->
 								
 								<!--begin:Menu item-->
-								<div class="menu-item menu-accordion">
+								<div class="menu-item menu-accordion here show">
 									<!--begin:Menu link-->
-									<a class="menu-link" href="blog_home.html">
+									<a class="menu-link" href="../blog_home.html">
 										<span class="menu-icon">
 											<i class="ki-duotone ki-book-open">
 												<span class="path1"></span>
-												<span class="path2"></span>
-												<span class="path3"></span>
-												<span class="path4"></span>
+													<span class="path2"></span>
+													<span class="path3"></span>
+													<span class="path4"></span>
 											</i>
 										</span>
 										<span class="menu-title">
@@ -162,9 +161,6 @@
 						<div class="container-fluid d-flex align-items-center flex-wrap justify-content-between" id="kt_header_container">
 							<!--begin::Page title-->
 							<div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-2 pb-5 pb-lg-0 pt-7 pt-lg-0" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
-								<!--begin::Heading-->
-								<h1 class="d-flex flex-column text-gray-900 fw-bold my-0 fs-1">Blog Post</h1>
-								<!--end::Heading-->
 							</div>
 							<!--end::Page title=-->
 							<!--begin::Wrapper-->
@@ -350,67 +346,24 @@
 														<div class="d-flex flex-wrap mb-6">
 															<!--begin::Item-->
 															<div class="me-9 my-1">
-																<!--begin::Icon-->
-																<!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
-																<span class="svg-icon svg-icon-primary svg-icon-2 me-1">
-																	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																		<rect x="2" y="2" width="9" height="9" rx="2" fill="currentColor" />
-																		<rect opacity="0.3" x="13" y="2" width="9" height="9" rx="2" fill="currentColor" />
-																		<rect opacity="0.3" x="13" y="13" width="9" height="9" rx="2" fill="currentColor" />
-																		<rect opacity="0.3" x="2" y="13" width="9" height="9" rx="2" fill="currentColor" />
-																	</svg>
-																</span>
-																<!--end::Svg Icon-->
-																<!--end::Icon-->
-																<!--begin::Label-->
-																<span class="fw-bold text-gray-400">06 April 2021</span>
-																<!--end::Label-->
-															</div>
-															<!--end::Item-->
-															<!--begin::Item-->
-															<div class="me-9 my-1">
-																<!--begin::Icon-->
-																<!--SVG file not found: icons/duotune/finance/fin006.svgFolder.svg-->
-																<!--end::Icon-->
-																<!--begin::Label-->
-																<span class="fw-bold text-gray-400">Announcements</span>
-																<!--begin::Label-->
+																<span class="text-gray-400 fw-bold">Feb 14 2025</span>
 															</div>
 															<!--end::Item-->
 															<!--begin::Item-->
 															<div class="my-1">
-																<!--begin::Icon-->
-																<!--begin::Svg Icon | path: icons/duotune/communication/com003.svg-->
-																<span class="svg-icon svg-icon-primary svg-icon-2 me-1">
-																	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-																		<path opacity="0.3" d="M2 4V16C2 16.6 2.4 17 3 17H13L16.6 20.6C17.1 21.1 18 20.8 18 20V17H21C21.6 17 22 16.6 22 16V4C22 3.4 21.6 3 21 3H3C2.4 3 2 3.4 2 4Z" fill="currentColor" />
-																		<path d="M18 9H6C5.4 9 5 8.6 5 8C5 7.4 5.4 7 6 7H18C18.6 7 19 7.4 19 8C19 8.6 18.6 9 18 9ZM16 12C16 11.4 15.6 11 15 11H6C5.4 11 5 11.4 5 12C5 12.6 5.4 13 6 13H15C15.6 13 16 12.6 16 12Z" fill="currentColor" />
-																	</svg>
-																</span>
-																<!--end::Svg Icon-->
-																<!--end::Icon-->
-																<!--begin::Label-->
-																<span class="fw-bold text-gray-400">24 Comments</span>
-																<!--end::Label-->
+																<span class="badge badge-light-primary fw-bold">TUTORIAL</span>
 															</div>
 															<!--end::Item-->
 														</div>
 														<!--end::Info-->
 														<!--begin::Title-->
-														<a href="#" class="text-dark text-hover-primary fs-2 fw-bold">Admin Panel - How To Get Started Tutorial. Create a customizable SaaS Based applications and solutions
-														<span class="fw-bold text-muted fs-5 ps-1">5 mins read</span></a>
+														<a href="#" class="fs-2 text-gray-800 text-hover-primary fw-bold mb-4">Setting Up Isaac Gym and Legged Gym for Robot Training</a>
 														<!--end::Title-->
 														<!--begin::Container-->
 														<div class="overlay mt-8">
 															<!--begin::Image-->
-															<div class="bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-350px" style="background-image:url('../assets/media/stock/1600x800/img-1.jpg')"></div>
+															<div class="bgi-no-repeat bgi-position-center bgi-size-cover card-rounded min-h-350px" style="background-image:url('../posts/media/isaac_gym_setup.jpg')"></div>
 															<!--end::Image-->
-															<!--begin::Links-->
-															<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-																<a href="../../demo1/dist/pages/about.html" class="btn btn-primary">About Us</a>
-																<a href="../../demo1/dist/pages/careers/apply.html" class="btn btn-light-primary ms-3">Join Us</a>
-															</div>
-															<!--end::Links-->
 														</div>
 														<!--end::Container-->
 													</div>
@@ -418,19 +371,17 @@
 													<!--begin::Description-->
 													<div class="fs-5 fw-semibold text-gray-600">
 														<!--begin::Text-->
-														<p class="mb-8">First, a disclaimer – the entire process of writing a blog post often takes more than a couple of hours, even if you can type eighty words per minute and your writing skills are sharp. From the seed of the idea to finally hitting “Publish,” you might spend several days or maybe even a week “writing” a blog post, but it’s important to spend those vital hours planning your post and even thinking about
-														<a href="../../demo1/dist/pages/blog/post.html" class="link-primary pe-1">Your Post</a>(yes, thinking counts as working if you’re a blogger) before you actually write it.</p>
+														<p class="mb-8"><a href="https://github.com/leggedrobotics/legged_gym">Legged Gym</a> is an exciting framework for training legged robots using deep reinforcement learning (RL). Inspired by the paper <a href="https://arxiv.org/pdf/2109.11978">Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning</a>, Legged Gym provides a simpler and less complicated alternative to NVIDIA Isaac Lab. Although the maintainers have mentioned that updates might be limited due to NVIDIA Isaac Lab's initialization, I believe Legged Gym remains an excellent starting point for those looking to dive into RL for legged robots.</p>
 														<!--end::Text-->
+
 														<!--begin::Text-->
-														<p class="mb-8">There’s an old maxim that states,
-														<span class="text-gray-800 pe-1">“No fun for the writer, no fun for the reader.”</span>No matter what industry you’re working in, as a blogger, you should live and die by this statement.</p>
-														<!--end::Text-->
-														<!--begin::Text-->
-														<p class="mb-8">Before you do any of the following steps, be sure to pick a topic that actually interests you. Nothing – and
-														<a href="../../demo1/dist/pages/blog/home.html" class="link-primary pe-1">I mean NOTHING</a>– will kill a blog post more effectively than a lack of enthusiasm from the writer. You can tell when a writer is bored by their subject, and it’s so cringe-worthy it’s a little embarrassing.</p>
-														<!--end::Text-->
-														<!--begin::Text-->
-														<p class="mb-17">I can hear your objections already. “But Dan, I have to blog for a cardboard box manufacturing company.” I feel your pain, I really do. During the course of my career, I’ve written content for dozens of clients in some less-than-thrilling industries (such as financial regulatory compliance and corporate housing), but the hallmark of a professional blogger is the ability to write well about any topic, no matter how dry it may be. Blogging is a lot easier, however, if you can muster at least a little enthusiasm for the topic at hand.</p>
+														<h3 class="mt-10 mb-5">Why Legged Gym?</h3>
+														<ul class="mb-8">
+															<li><strong>Simplicity:</strong> Unlike Isaac Lab, Legged Gym is easier to set up and understand, making it ideal for newcomers.</li>
+															<li><strong>Performance:</strong> It leverages Isaac Gym's GPU-based simulation, enabling thousands of parallel environments for rapid training.</li>
+															<li><strong>Research-Backed:</strong> The framework is inspired by cutting-edge research in massively parallel deep reinforcement learning.</li>
+															<li><strong>Focus on Legged Robots:</strong> Pre-configured environments for robots like ANYmal and A1 simplify experiments in legged locomotion.</li>
+														</ul>
 														<!--end::Text-->
 													</div>
 													<!--end::Description-->
@@ -474,71 +425,9 @@
 											<!--end::Content-->
 											<!--begin::Sidebar-->
 											<div class="flex-column flex-lg-row-auto w-100 w-xl-300px mb-10">
-												<!--begin::Recent posts-->
-												<div class="m-0">
-													<h4 class="text-dark mb-7">Recent Posts</h4>
-													<!--begin::Item-->
-													<div class="d-flex flex-stack mb-7">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-60px symbol-2by3 me-4">
-															<div class="symbol-label" style="background-image: url('../assets/media/stock/600x400/img-1.jpg')"></div>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Title-->
-														<div class="m-0">
-															<a href="#" class="text-dark fw-bold text-hover-primary fs-6">About Bootstrap Admin</a>
-															<span class="text-gray-600 fw-semibold d-block pt-1 fs-7">We’ve been a focused on making a the sky</span>
-														</div>
-														<!--end::Title-->
-													</div>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<div class="d-flex flex-stack mb-7">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-60px symbol-2by3 me-4">
-															<div class="symbol-label" style="background-image: url('../assets/media/stock/600x400/img-2.jpg')"></div>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Title-->
-														<div class="m-0">
-															<a href="#" class="text-dark fw-bold text-hover-primary fs-6">A yellow sofa</a>
-															<span class="text-gray-600 fw-semibold d-block pt-1 fs-7">We’ve been a focused on making a the sky</span>
-														</div>
-														<!--end::Title-->
-													</div>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<div class="d-flex flex-stack mb-7">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-60px symbol-2by3 me-4">
-															<div class="symbol-label" style="background-image: url('../assets/media/stock/600x400/img-3.jpg')"></div>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Title-->
-														<div class="m-0">
-															<a href="#" class="text-dark fw-bold text-hover-primary fs-6">Our Camra Mega Set</a>
-															<span class="text-gray-600 fw-semibold d-block pt-1 fs-7">We’ve been a focused on making a the sky</span>
-														</div>
-														<!--end::Title-->
-													</div>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<div class="d-flex flex-stack">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-60px symbol-2by3 me-4">
-															<div class="symbol-label" style="background-image: url('../assets/media/stock/600x400/img-4.jpg')"></div>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Title-->
-														<div class="m-0">
-															<a href="#" class="text-dark fw-bold text-hover-primary fs-6">Time to cook and eat?</a>
-															<span class="text-gray-600 fw-semibold d-block pt-1 fs-7">We’ve been a focused on making a the sky</span>
-														</div>
-														<!--end::Title-->
-													</div>
-													<!--end::Item-->
+												<div class="m-0" data-latest-articles>
+													<!-- Latest articles will be loaded here -->
 												</div>
-												<!--end::Recent posts-->
 											</div>
 											<!--end::Sidebar-->
 										</div>
@@ -604,8 +493,8 @@
 		<script src="../assets/js/custom/widgets.js"></script>
 		<script src="../assets/js/custom/apps/chat/chat.js"></script>
 		<script src="../assets/js/custom/utilities/modals/users-search.js"></script>
+		<script src="../assets/js/custom/latest-articles.js"></script>
 		<!--end::Custom Javascript-->
-		<!--end::Javascript-->
 	</body>
 	<!--end::Body-->
 </html>

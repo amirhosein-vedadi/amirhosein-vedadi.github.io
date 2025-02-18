@@ -70,7 +70,7 @@
 							<!--begin::Menu-->
 							<div class="menu menu-column menu-rounded menu-sub-indention fw-semibold" id="#kt_aside_menu" data-kt-menu="true">
 								<!--begin:Menu item-->
-								<div data-kt-menu-trigger="click" class="menu-item here show menu-accordion">
+								<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
 									<!--begin:Menu link-->
 									<a class="menu-link" href="../index.html">
 										<span class="menu-icon">
@@ -108,7 +108,7 @@
 								<!--end:Menu item-->
 								
 								<!--begin:Menu item-->
-								<div class="menu-item menu-accordion">
+								<div class="menu-item menu-accordion here show">
 									<!--begin:Menu link-->
 									<a class="menu-link" href="../blog_home.html">
 										<span class="menu-icon">
@@ -481,24 +481,8 @@
 											<!--end::Content-->
 											<!--begin::Sidebar-->
 											<div class="flex-column flex-lg-row-auto w-100 w-xl-300px mb-10">
-												<div class="m-0">
-													<h4 class="fs-3 text-gray-800 mb-7">Latest Articles & Tutorials</h4>
-													<!--begin::Item-->
-													<div class="d-flex flex-stack mb-7">
-														<!--begin::Symbol-->
-														<div class="symbol symbol-60px symbol-2by3 me-4">
-															<div class="symbol-label" style="background-image: url('media/anymal_rl.jpg')"></div>
-														</div>
-														<!--end::Symbol-->
-														<!--begin::Title-->
-														<div class="m-0">
-															<a href="rl_legged_robots.html" class="text-gray-900 fw-bold text-hover-primary fs-6">Deep Reinforcement Learning for Legged Robots</a>
-															<span class="text-gray-600 fw-semibold d-block pt-1 fs-7">Feb 9 2025</span>
-															<span class="badge badge-light-primary fw-bold my-2">TECHNICAL</span>
-														</div>
-														<!--end::Title-->
-													</div>
-													<!--end::Item-->
+												<div class="m-0" data-latest-articles>
+													<!-- Latest articles will be loaded here -->
 												</div>
 											</div>
 											<!--end::Sidebar-->
@@ -565,8 +549,8 @@
 		<script src="../assets/js/custom/widgets.js"></script>
 		<script src="../assets/js/custom/apps/chat/chat.js"></script>
 		<script src="../assets/js/custom/utilities/modals/users-search.js"></script>
+		<script src="../assets/js/custom/latest-articles.js"></script>
 		<!--end::Custom Javascript-->
-		<!--end::Javascript-->
 	</body>
 	<!--end::Body-->
 </html>
